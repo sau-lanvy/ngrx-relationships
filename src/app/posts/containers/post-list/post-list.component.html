@@ -1,0 +1,6 @@
+<div *ngFor="let post of posts | async">
+  <h2>{{ post.title }}</h2>
+  <ul>
+    <li *ngFor="let comment of post.comments"> {{comment.content}}</li>
+  </ul>
+</div>
